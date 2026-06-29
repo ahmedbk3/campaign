@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aidez Ahmed à atteindre l'Inde</title>
+<style>
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; outline: none; text-decoration: none; display: block; }
+  body { margin: 0; padding: 0; background-color: #F0FBF7; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+  .email-wrapper { background-color: #F0FBF7; padding: 32px 16px; }
+  .email-card { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.10); }
+
+  .banner-slot {
+    width: 100%; height: 260px;
+    background: linear-gradient(135deg, #06D6A0 0%, #80EDCA 40%, #FFD166 80%, #06D6A0 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 32px; position: relative;
+  }
+  .banner-emoji { font-size: 56px; line-height: 1; margin-bottom: 14px; }
+  .banner-pill {
+    font-size: 12px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: #fff;
+    background: rgba(0,0,0,0.18); padding: 7px 18px;
+    border-radius: 99px;
+  }
+  .banner-note { position: absolute; bottom: 10px; right: 14px; font-size: 10px; color: rgba(255,255,255,0.6); font-style: italic; }
+
+  .body-pad { padding: 40px 40px 0; }
+
+  .tag {
+    display: inline-block; background: #E0F7EF; color: #06D6A0;
+    font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; padding: 5px 14px;
+    border-radius: 99px; margin-bottom: 20px;
+  }
+
+  h1 { font-size: 30px; font-weight: 800; color: #1a1a2e; line-height: 1.2; margin: 0 0 20px; }
+  h1 span { color: #06D6A0; }
+
+  .intro { font-size: 15px; color: #555; line-height: 1.85; margin: 0 0 18px; }
+  .intro strong { color: #1a1a2e; }
+
+  .quote {
+    background: #E0F7EF; border-left: 4px solid #06D6A0;
+    padding: 18px 22px; margin: 24px 0;
+    border-radius: 0 12px 12px 0;
+  }
+  .quote p { font-size: 16px; font-style: italic; color: #1a1a2e; margin: 0; line-height: 1.6; font-weight: 500; }
+
+  .stats-table { width: 100%; border-collapse: separate; border-spacing: 10px; margin: 28px 0; }
+  .stat-td {
+    background: #F0FBF7; border: 2px solid #B2EFD8;
+    border-radius: 14px; padding: 18px 12px;
+    text-align: center; width: 33%;
+  }
+  .stat-num { font-size: 26px; font-weight: 800; color: #06D6A0; display: block; margin-bottom: 5px; }
+  .stat-lbl { font-size: 11px; color: #aaa; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+  .cards { padding: 0 40px; }
+  .card {
+    display: flex; align-items: flex-start; gap: 14px;
+    background: #F9FAFB; border: 1px solid #EFEFEF;
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 12px;
+  }
+  .card-ico { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+  .card h3 { font-size: 14px; font-weight: 700; color: #1a1a2e; margin: 0 0 4px; }
+  .card p { font-size: 13px; color: #777; margin: 0; line-height: 1.6; }
+
+  .budget { padding: 28px 40px; }
+  .budget-title { font-size: 17px; font-weight: 800; color: #1a1a2e; margin-bottom: 14px; }
+  .budget-tbl { width: 100%; border-collapse: collapse; }
+  .brow td { padding: 12px 0; border-bottom: 1px solid #F5F5F5; font-size: 14px; }
+  .brow:last-child td { border-bottom: none; }
+  .bl { color: #555; }
+  .ba { text-align: right; font-weight: 700; color: #1a1a2e; }
+  .btotal .bl { color: #1a1a2e; font-weight: 800; font-size: 15px; }
+  .btotal .ba { color: #06D6A0; font-size: 19px; font-weight: 800; }
+
+  .cta {
+    margin: 4px 40px 40px;
+    background: linear-gradient(135deg, #06D6A0, #04B589);
+    border-radius: 16px; padding: 36px 32px; text-align: center;
+  }
+  .cta h2 { font-size: 22px; font-weight: 800; color: #fff; margin: 0 0 10px; }
+  .cta p { color: rgba(255,255,255,0.85); font-size: 14px; margin: 0 0 22px; line-height: 1.7; }
+  .cta-btn {
+    display: inline-block; background: #fff; color: #06D6A0;
+    font-size: 16px; font-weight: 800; padding: 15px 38px;
+    border-radius: 10px; text-decoration: none;
+  }
+  .cta-sub { margin-top: 14px; font-size: 12px; color: rgba(255,255,255,0.7); }
+
+  .footer {
+    background: #1a1a2e; padding: 26px 40px;
+    text-align: center; border-radius: 0 0 20px 20px;
+  }
+  .footer p { color: rgba(255,255,255,0.45); font-size: 12px; margin: 0 0 5px; }
+  .footer a { color: #06D6A0; text-decoration: none; }
+
+  @media only screen and (max-width: 480px) {
+    .body-pad, .cards, .budget { padding-left: 20px !important; padding-right: 20px !important; }
+    .cta { margin-left: 20px !important; margin-right: 20px !important; }
+    h1 { font-size: 24px !important; }
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+<div class="email-card">
+
+  <!-- BANNIÈRE : Remplacez ce bloc par <img src="VOTRE_URL" width="600" style="width:100%;display:block;"/> -->
+ <img src="C:\Users\MSI\Desktop\gofundmeauto\ahmed_cover_v2.jpg" width="600" style="width:100%;display:block;"/>
+
+
+  <div class="body-pad">
+    <span class="tag">🌍 Histoire vraie · Ingénierie · Inde</span>
+    <h1>Un étudiant tunisien<br/>part en <span>Inde.</span><br/>Il a juste besoin d'un tremplin.</h1>
+
+    <p class="intro">Je m'appelle <strong>Ahmed Ben Kilani</strong>. Je suis étudiant en 3ème année de Génie des Réseaux et Télécommunications à <strong>l'INSAT de Tunis</strong>, et cet été j'ai été sélectionné pour un <strong>stage Global Talent à la Graphic Era University de Dehradun, en Inde</strong> via AIESEC — l'une des plus grandes organisations de leadership jeunesse au monde.</p>
+
+    <p class="intro">Le stage est entièrement pris en charge par le programme. Ce dont j'ai besoin, c'est de couvrir <strong>45 jours de logement et de frais de vie</strong> à Dehradun — pour me concentrer entièrement sur l'expérience et en tirer le maximum.</p>
+
+    <div class="quote">
+      <p>« Les compétences s'acquièrent en cours. Les carrières se construisent par l'expérience. J'ai mérité ma place — j'ai juste besoin d'aide pour y arriver. »</p>
+    </div>
+
+    <table class="stats-table" role="presentation">
+      <tr>
+        <td class="stat-td"><span class="stat-num">45</span><span class="stat-lbl">Jours à l'étranger</span></td>
+        <td class="stat-td"><span class="stat-num">1 000$</span><span class="stat-lbl">Objectif</span></td>
+        <td class="stat-td"><span class="stat-num">Juillet</span><span class="stat-lbl">Départ</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="card-ico">🎓</div><div><h3>INSAT Tunis — Grande école d'ingénieurs</h3><p>L'une des filières les plus sélectives de Tunisie en Réseaux & Télécommunications.</p></div></div>
+    <div class="card"><div class="card-ico">💼</div><div><h3>Expérience réelle chez IBITEK Group</h3><p>Stage sur l'IoT industriel, VLANs, supervision réseau et diagnostic d'incidents.</p></div></div>
+    <div class="card"><div class="card-ico">🌍</div><div><h3>Sélectionné via AIESEC à l'international</h3><p>Choisi par un processus compétitif mondial pour un poste technique à Dehradun — départ début juillet 2026.</p></div></div>
+    <div class="card"><div class="card-ico">🎸</div><div><h3>Plus qu'un ingénieur</h3><p>Guitariste, président du club média, réalisateur vidéo. Ambitieux et sincèrement reconnaissant pour chaque porte ouverte.</p></div></div>
+  </div>
+
+  <div class="budget">
+    <p class="budget-title">Où va chaque euro 💸</p>
+    <table class="budget-tbl" role="presentation">
+      <tr class="brow"><td class="bl">🏠 Logement étudiant (45 jours)</td><td class="ba">~500$</td></tr>
+      <tr class="brow"><td class="bl">🍱 Repas quotidiens</td><td class="ba">~300$</td></tr>
+      <tr class="brow"><td class="bl">🚌 Transport local</td><td class="ba">~100$</td></tr>
+      <tr class="brow"><td class="bl">📡 Connexion & nécessités</td><td class="ba">~100$</td></tr>
+      <tr class="brow btotal"><td class="bl">Objectif total</td><td class="ba">1 000$</td></tr>
+    </table>
+  </div>
+
+  <div class="cta">
+    <h2>Faites partie de ce voyage. 🙏</h2>
+    <p>Si quelqu'un vous a déjà aidé à franchir un cap — c'est votre chance de le transmettre. Chaque dollar va directement à rendre ces 45 jours possibles.</p>
+    <a href="https://gofund.me/fbd7341a6" class="cta-btn">Faire un don sur GoFundMe →</a>
+    <p class="cta-sub">Vous ne pouvez pas donner ? Transférer cet email aide tout autant.</p>
+  </div>
+
+  <div class="footer">
+    <p>Ahmed Ben Kilani · INSAT Tunis · Ingénieur Réseaux & Télécoms</p>
+    <p><a href="mailto:ahmedbenkilani3@gmail.com">ahmedbenkilani3@gmail.com</a> &nbsp;·&nbsp; <a href="https://ahmedbk3.github.io">ahmedbk3.github.io</a></p>
+    <p style="margin-top:10px;">GoFundMe : <a href="https://gofund.me/fbd7341a6">gofund.me/fbd7341a6</a></p>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
